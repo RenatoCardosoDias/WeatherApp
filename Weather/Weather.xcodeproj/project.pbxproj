@@ -13,6 +13,7 @@
 		8850E9FD29ADA7E800347609 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8850E9FC29ADA7E800347609 /* Preview Assets.xcassets */; };
 		8850EA0429ADA80500347609 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8850EA0329ADA80500347609 /* WeatherService.swift */; };
 		8850EA0729AFAF7000347609 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8850EA0629AFAF7000347609 /* Weather.swift */; };
+		889241F229B00630003DD53B /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889241F129B00630003DD53B /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8850EA0329ADA80500347609 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		8850EA0529AFAC4000347609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8850EA0629AFAF7000347609 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		889241F129B00630003DD53B /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				8850EA0629AFAF7000347609 /* Weather.swift */,
 				8850E9F929ADA7E800347609 /* Assets.xcassets */,
 				8850E9FB29ADA7E800347609 /* Preview Content */,
+				889241F129B00630003DD53B /* WeatherViewModel.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889241F229B00630003DD53B /* WeatherViewModel.swift in Sources */,
 				8850EA0729AFAF7000347609 /* Weather.swift in Sources */,
 				8850E9F829ADA7E600347609 /* WeatherView.swift in Sources */,
 				8850EA0429ADA80500347609 /* WeatherService.swift in Sources */,
