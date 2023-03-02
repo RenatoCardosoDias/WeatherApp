@@ -28,6 +28,8 @@ struct WeatherView: View {
             Text(viewModel.weatherDescription)
                 .font(.largeTitle)
         } //end VStack
+        //agora queremos garantir que os dados serão atualizados quando a nossa view aparecer
+        .onAppear(perform: viewModel.refresh)
     } //end var body
 } //end struct
 
