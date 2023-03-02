@@ -38,7 +38,11 @@ public class WeaterViewModel: ObservableObject {
     public func refresh() {
         weatherService.loadWeatherData{ weather in
             DispatchQueue.main.async {
-                <#code#>
+                //aqui vamos atribuir os dados das propriedades
+                self.cityName = weather.city
+                self.temperature = "\(weather.temperature) ºC"
+                self.weatherDescription = weather.description.capitalized
+                self.weatherIcon = iconMap[weather.iconName] ?? defaultIcon //como criamos um array de icones e definimos como opcional entao caso nao exista o icone ele pega o valor padrão
             }
             //vamos atualizar as propriedades do model, desde que essas propriedades vão afetar a UI, nos temos que garantir a atualização deles na fila principal, então vamos despachar
         }
