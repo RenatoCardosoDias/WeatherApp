@@ -33,8 +33,10 @@ struct WeatherView: View {
     } //end var body
 } //end struct
 
+//agora temos WeatherviewModel como parte de nossa WeatherView, entao agora precisamos atualizar cada lugar onde estamos criando uma visualização da WeatherView para fornecer uma WeatherViewModel, entao vamos atualizar a prévisualização
+
 struct WeatherView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherView()
+        WeatherView(viewModel: WeatherViewModel(weatherService: WeatherService()))
     }
 }
