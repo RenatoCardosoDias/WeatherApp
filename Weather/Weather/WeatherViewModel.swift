@@ -7,6 +7,20 @@
 // Vamos pegar os dados no nosso serviços e converte ele em modelo para informação que nossa visualização precisa para mostrar no nosso aplicativo
 import Foundation
 
-public class WeaterViewModel: ObservableObject {
+private let defaultIcon = "❓"
+private let iconMap = [
+    "Drizzle" : "💦",
+    "Thunderstorm": "⛈️",
+    "Rain": "🌧️",
+    "Snow": "❄️",
+    "Clear": "☀️",
+    "Clouds": "☁️"
+] //end private let iconMap
 
-}
+
+public class WeaterViewModel: ObservableObject {
+    @Published var cityName: String = "City Name"
+    @Published var temperature: String = "--"
+    @Published var weatherDescription: String = "--"
+    @Published var weatherIcon: String = defaultIcon
+} //end public class WeaterViewModel
