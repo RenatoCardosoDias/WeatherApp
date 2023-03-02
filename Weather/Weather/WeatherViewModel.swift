@@ -34,9 +34,14 @@ public class WeaterViewModel: ObservableObject {
         self.weatherService = weatherService
     } //end public init
 
-    //atualizar o metodo do serviço de clima para carregar os dados do Weather Data e uma vez esses dados obtidos na viewmodel, nos vamos atulizar essas 4 propriedades publicadas que a visualização vai usar para mostrar em nosso 
+    //atualizar o metodo do serviço de clima para carregar os dados do Weather Data e uma vez esses dados obtidos na viewmodel, nos vamos atulizar essas 4 propriedades publicadas que a visualização vai usar para mostrar em nosso
     public func refresh() {
-
+        weatherService.loadWeatherData{ weather in
+            DispatchQueue.main.async {
+                <#code#>
+            }
+            //vamos atualizar as propriedades do model, desde que essas propriedades vão afetar a UI, nos temos que garantir a atualização deles na fila principal, então vamos despachar
+        }
     }
 
 
