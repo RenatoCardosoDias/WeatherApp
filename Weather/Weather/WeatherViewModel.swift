@@ -23,8 +23,23 @@ public class WeaterViewModel: ObservableObject {
     @Published var temperature: String = "--"
     @Published var weatherDescription: String = "--"
     @Published var weatherIcon: String = defaultIcon
+
+
+    //vamos precisar de um servidor de clima (weather service) dentro da noss visualização, que vai ser usado para fornecer os dados do clima
+    public let weatherService: WeatherService
+
+    //incializar o serviço do clima quando nosso model inicializar
+    public init(weatherService: WeatherService){
+        //atribuindo a propriedade do serviço
+        self.weatherService = weatherService
+    } //end public init
+
+
+    public func refresh() {
+
+    }
+
+
 } //end public class WeaterViewModel
 
-//vamos precisar de um servidor de clima (weather service) dentro da noss visualização, que vai ser usado para fornecer os dados do clima
-public let weatherService: WeatherService
 
