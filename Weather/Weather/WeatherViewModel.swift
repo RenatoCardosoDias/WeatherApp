@@ -18,7 +18,7 @@ private let iconMap = [
 ] //end private let iconMap
 
 
-public class WeaterViewModel: ObservableObject {
+public class WeatherViewModel: ObservableObject {
     @Published var cityName: String = "City Name"
     @Published var temperature: String = "--"
     @Published var weatherDescription: String = "--"

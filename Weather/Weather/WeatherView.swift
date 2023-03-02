@@ -8,18 +8,24 @@
 import SwiftUI
 
 struct WeatherView: View {
+
+    //nos estamos observando as propriedades da WeatherViewModel
+
+    @ObservedObject var viewModel: WeatherViewModel //através desta prorpriedade (view model) nos vamos obter as informações que precisamos para mostrar em nossos textos
+
+
     var body: some View {
         VStack {
-            Text("Los Angeles")
+            Text(viewModel.cityName)
                 .font(.largeTitle)
                 .padding()
-            Text("25ºC")
+            Text(viewModel.temperature)
                 .font(.system(size: 70))
                 .bold()
-            Text("🌥️")
+            Text(viewModel.weatherIcon)
                 .font(.largeTitle)
                 .padding()
-            Text("Clear Sky")
+            Text(viewModel.weatherDescription)
                 .font(.largeTitle)
         } //end VStack
     } //end var body
