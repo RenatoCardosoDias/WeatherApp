@@ -24,3 +24,7 @@ public class WeaterViewModel: ObservableObject {
     @Published var weatherDescription: String = "--"
     @Published var weatherIcon: String = defaultIcon
 } //end public class WeaterViewModel
+
+//vamos precisar de um servidor de clima (weather service) dentro da noss visualização, que vai ser usado para fornecer os dados do clima
+public let weatherService: WeatherService
+
