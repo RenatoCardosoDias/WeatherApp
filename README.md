@@ -7,8 +7,6 @@ Esse projeto é de autoria de Stewart Lynch, um desenvolvedor IOS e Youtuber foc
 https://www.createchsol.com/WeatherAppCourse/
 
 
-O tentando seguir as melhores praticas de desenvolvimento o projeto visa passar pelos conceitos individuais em Swift e SwiftUI
-
 Sera utilizado a API OPEN WEATHER MAP (http://Openweathermap.org/), nele poderá digitar o nome de qualquer loclização do mundo e obter os a previsão de 7 dias, e toda vez que carregar o aplicativo o ultimo dia inserido é armazenado nas configurações do usuário, então quando o carregar você obeterá a previsão atual para esta cidade imediatamente, você poderá alterar entre Celsius ou Fahrenheit, embora isso possa não parecer um aplicativo particularmente complicado, há muitos conceitos a serem abordados.
 
 1. Obtendo uma chave da api através do site http://openweathermap.org/
